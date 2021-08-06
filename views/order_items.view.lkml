@@ -37,6 +37,8 @@ view: order_items {
   dimension: sale_price {
     type: number
     sql: ${TABLE}.sale_price ;;
+    value_format: "[>999]0.00,\" K\";"
+
   }
 
   measure: count {
